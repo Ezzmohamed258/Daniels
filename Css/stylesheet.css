@@ -1,0 +1,400 @@
+/* ===== Start global styling ===== */
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1 , h2 , h3 , h4 , h5 , h6, .logo{
+    font-family: "Montserrat", sans-serif;
+}
+/* ===== End global styling ===== */
+:root{
+    --main-color:#1C1C1C;
+    --secondary-color: #fff:
+}
+html{
+    scroll-padding-top: 71px ;
+}
+/* ===== start navbar ===== */
+.navbar-default {
+    padding: 5px 0 5px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+}
+.nav-scroll .navbar-toggle .icon-bar {
+    background: #fff;
+  }
+
+@media screen and (max-width: 992px) {
+
+    .collapse,
+    .collapsing {
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .collapse ul li,
+    .collapsing ul li {
+        margin: 10px;
+    }
+
+    .collapse ul li a,
+    .collapsing ul li a {
+        color: #111 !important;
+    }
+    .navbar-nav li .active:after{
+        background: #fff;
+        opacity: 0;
+    }
+}
+body:has([href="#Home"].nav-link.active) nav.bg-body-white {
+    background-color: transparent !important;
+    padding: 20px 0 20px;
+    position: absolute;
+}
+body:has([href="#Home"].nav-link.active) nav.bg-body-white a {
+    color: #fff !important;
+}
+body:has([href="#Home"].nav-link.active) nav.bg-body-white .navbar-nav li a:after{
+    background: #fff;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.navbar-nav li a {
+    margin: 0 !important;
+    color: #111 !important;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-nav li .active:after {
+    width: 100%;
+}
+
+.navbar-nav li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+/* ===== End navbar ===== */
+
+/* ===== start header ===== */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url(../Images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+header .header-content h2{
+    font-size: 60px;
+    font-weight: 500;
+}
+header .header-content h2::after{
+    content:" |";
+    animation: header-animation 7s infinite linear ;
+}
+@keyframes header-animation {
+    0% {content: "|";}
+    1.69% {content:"D|";}
+    3.419053185% {content:"De|";}
+    5.143191116% {content:"Dev|";}
+    6.867329047% {content:"Devl|";}
+    8.591466978% {content:"Devlo|";}
+    10.31560491% {content:"Devlop|";}
+    12.03974284% {content:"Devlope|";}
+    13.76388077% {content:"Devloper|";}
+    15.4880187% {content:"Devlope|";}
+    17.21215663% {content:"Devlop|";}
+    18.93629456% {content:"Devlo|";}
+    20.6604325% {content:"Devl|";}
+    22.38457043% {content:"Dev|";}
+    24.10870836% {content:"De|";}
+    25.83284629% {content:"D|";}
+    27.55698422% {content:"De|";}
+    29.28112215% {content:"Des|";}
+    31.00526008% {content:"Desi|";}
+    32.72939801% {content:"Desig|";}
+    34.45353594% {content:"Design|";}
+    36.17767387% {content:"Designe|";}
+    37.90181181% {content:"Designer|";}
+    39.62594974% {content:"Designe|";}
+    41.35008767% {content:"Design|";}
+    43.0742256% {content:"Desig|";}
+    44.79836353% {content:"Desi|";}
+    46.52250146% {content:"De|";}
+    48.24663939% {content:"D|";}
+    49.97077732% {content:"|";}
+    51.69491525% {content:"A|";}
+    53.41905319% {content:"Ab|";}
+    55.14319112% {content:"Abd|";}
+    56.86732905% {content:"Abde|";}
+    58.59146698% {content:"Abdel|";}
+    60.31560491% {content:"Abdela|";}
+    62.03974284% {content:"Abdelaz|";}
+    63.76388077% {content:"Abdelazi|";}
+    65.4880187% {content:"Abdelaziz|";}
+    67.21215663% {content:"Abdelazi|";}
+    68.93629456% {content:"Abdelaz|";}
+    70.6604325% {content:"Abdela|";}
+    72.38457043% {content:"Abdel|";}
+    74.10870836% {content:"Abde|";}
+    75.83284629% {content:"Abd|";}
+    77.55698422% {content:"Ab|";}
+    79.28112215% {content:"A|";}
+    81.00526008% {content:"|";}
+    82.72939801% {content:"M|";}
+    84.45353594% {content:"Mo|";}
+    86.17767387% {content:"Moh|";}
+    87.90181181% {content:"Moha|";}
+    89.62594974% {content:"Moham|";}
+    91.35008767%{content:"Mohame|";}
+    93.0742256% {content:"Mohamed|";}
+    94.79836353% {content:"Mohame|";}
+    95.52250146% {content:"Moham|";}
+    97.24663939% {content:"Moha|";}
+    98.97077732% {content:"Moh|";}
+    99% {content:"Mo|";}
+    100% {content:"M|";} 
+}
+.header-icon .fa-brands{
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+/* ===== End header ===== */
+
+/* ===== Start About ===== */
+.about-text span{
+    color: var(--main-color);
+}
+.about-text .letter-spacing{
+    letter-spacing: 2px;
+}
+.progress{
+    margin: 30px 0;
+    height: 1.5rem;
+}
+.progress .progress-bar{
+    border-radius: 5px;
+}
+.progress .progress-bar h6 {
+    font-size: 13px;
+    margin: 0;
+}
+.btn{
+    transition: all .6s;
+}
+.btn-primary{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.about .btn-outline-secondary{
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+.about .btn-outline-secondary:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* ===== End About ===== */
+
+/*  ===== start services ===== */
+.services{
+    background-color: #F8F9FA;
+}
+.services .inner-services{
+    background-color: #F8F9FA;
+    transition: all .5s;
+}
+.services .services-title{
+    font-size: 48px;
+    text-align: center;
+}
+.services .fa-solid{
+    color: var(--main-color);
+    font-size: 20px;
+    background-color: #F0F1F2;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.inner-services:hover .fa-solid{
+    color: #fff;
+    background-color: var(--main-color);
+}
+/*  ===== End services ===== */
+
+/*  ===== Start portfolio ===== */
+.inner .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    transition: all .7s;
+}
+.inner:hover .layer{
+    top: 0;
+}
+.nav-tabs{
+    border: none;
+}
+.nav{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link{
+    border: none;
+    border-radius: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    padding-block: 0;
+}
+.nav-tabs .nav-link.active{
+    border-bottom: 2px solid black;
+}
+/*  ===== End portfolio ===== */
+
+/*  ===== Start Testimonials ===== */
+.Testimonials{
+    background-color: #f1f1f1;
+    margin-top: 50px ;
+    padding: 100px 0 100px;
+}
+.Testimonials-contant img{
+    width: 90px;
+    height: 90px;
+}
+.client-contant i{
+    color: var(--main-color);
+}
+.Testimonials .carousel-indicators {
+    bottom: -50px; 
+}
+.Testimonials-contant span{
+    font-size: 12px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius:50% ;
+    background-color: var(--main-color);
+}
+/*  ===== End Testimonials ===== */
+
+/*  ===== start clients ===== */
+.clients{
+    padding: 100px 0;
+}
+.clients .fa-solid{
+    font-size: 30px;
+}
+/*  ===== End clients ===== */
+
+/*  ===== start Our Team ===== */
+.Our-Team{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+.team-layer{
+    background-color: #ffffffd2;
+    width: 97%;
+    height: 97%;
+    top:5px ;
+    bottom: 5px;
+    left:5px ;
+    right:5px ;
+    opacity: 0;
+}
+.team-img:hover .team-layer{
+    opacity: 1;
+    cursor: pointer;
+    animation: rotate .5s ease-in-out;
+}
+@keyframes rotate {
+    0% {
+        transform: rotatey(180deg);
+    }
+    100%{
+        transform: rotatey(360deg);
+    }
+}
+.team-img {
+    display: block;
+    overflow: hidden;
+}
+.card-img-top{
+    transition: all .6s ease;
+}
+.team-img:hover img {
+    scale: 1.2;
+}
+.team-layer .fa-brands{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+.team-layer .fa-brands:hover{
+    background-color: #ffffffea;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+/*  ===== End Our Team ===== */
+
+/*  ===== start Contact ===== */
+.Contact{
+    padding: 100px 0;
+}
+.Contact .fa-solid{
+    background-color:#F7F7F7 ;
+    font-size: 24px;
+    color: var(--main-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+.inner-contact:hover .fa-solid{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.Contact .form-control{
+    background-color: #F4F4F4;
+}
+.form-control:focus {
+    border: none ; 
+    outline: 0;
+    box-shadow:0 0 0 0 ;
+}
+/*  ===== End Contact ===== */
+
+
